@@ -1,5 +1,4 @@
-# pyautogui-01
-test 01 of pyautogui
-# need
+# install
 pip install pyautogui
+# need
 custome your imgs
