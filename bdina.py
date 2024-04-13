@@ -1,0 +1,35 @@
+import pyautogui
+pyautogui.hotkey('win', 's')
+pyautogui.sleep(0.5)
+pyautogui.typewrite('xamp')
+pyautogui.sleep(0.5)
+pyautogui.press('enter')
+pyautogui.sleep(0.5)
+starts=pyautogui.locateAllOnScreen("start.PNG")
+i=0
+for start in starts:
+    x, y = pyautogui.center(start)
+    if i<2:
+        pyautogui.click(x, y)
+        i=i+1
+
+daregueXamp=pyautogui.locateCenterOnScreen("daregueXamp.PNG")
+pyautogui.click(daregueXamp)
+chrome=pyautogui.locateCenterOnScreen("chrome.PNG")
+pyautogui.click(chrome)
+pyautogui.sleep(2)
+newWindow=pyautogui.locateCenterOnScreen("newWindow.PNG")
+pyautogui.click(newWindow)
+pyautogui.sleep(1)
+pyautogui.typewrite("localhost")
+pyautogui.press("enter")
+pyautogui.sleep(0.5)
+daregue=pyautogui.locateCenterOnScreen("daregue.PNG")
+pyautogui.click(daregue)
+pyautogui.sleep(0.5)
+visuale=pyautogui.locateCenterOnScreen("visuale.PNG")
+pyautogui.click(visuale)
+pyautogui.click(visuale)
+pyautogui.sleep(4)
+goLive=pyautogui.locateCenterOnScreen("goLive.PNG")
+pyautogui.click(goLive)
